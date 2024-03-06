@@ -15,7 +15,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+       $posts = Post::all();
+
+        return view('admin.posts.index', compact('posts'));
     }
 
     /**
@@ -37,9 +39,11 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Post $post)
+    public function show(string $slug)
     {
-        //
+        $post = Post::where('slug', $slug)->firstOrFail();
+
+        return view('admin.posts.show', compact('post'));
     }
 
     /**

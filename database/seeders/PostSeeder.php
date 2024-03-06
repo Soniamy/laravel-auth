@@ -29,7 +29,7 @@ class PostSeeder extends Seeder
             $post->content = fake()->paragraph();
             $post->save();
 
-            // OPPURE
+            // PROVO ANCHE
 
             $titleForMassAssignment = fake()->sentence();
             $slugForMassAssignment = Str::slug($titleForMassAssignment);
