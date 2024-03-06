@@ -28,7 +28,8 @@
                                         <th scope="row">{{ $post->id }}</th>
                                         <td>{{ $post->title }}</td>
                                         <td>{{ $post->slug }}</td>
-                                        <td>{{ $post->created_at }}</td>
+                                        {{--}}formato data{{--}}
+                                        <td>{{ $post->created_at->format('H:i d/m/Y') }}</td>
                                         <td>
                                             <a href="{{ route('admin.posts.show', ['post' => $post->slug]) }}" class="btn btn-xs btn-primary">
                                                 Show
