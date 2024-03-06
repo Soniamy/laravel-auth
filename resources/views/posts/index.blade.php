@@ -5,7 +5,7 @@
 @section('main-content')
     <div class="row">
         <div class="col-12">
-                <h1 class="text-center text-success">
+                <h1 class="text-center text-primary">
                         Articoli
                 </h1>
         </div>
