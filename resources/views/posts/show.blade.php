@@ -7,7 +7,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="text-center text-primary">
+                    <h1 class="text-center text-info-emphasis">
                         {{$post->title}}
                    </h1>
                    <p>

@@ -5,7 +5,7 @@
 @section('main-content')
     <div class="row">
         <div class="col-12">
-                <h1 class="text-center text-primary">
+                <h1 class="text-center text-info-emphasis">
                         Articoli
                 </h1>
         </div>
@@ -13,9 +13,9 @@
              <div class="col-12 col-xs-6 col-sm-4 col-md-3 mb-3 ">
             <div class="card">
                 <div class="card-body">
-                    <h3>{{$post->title}}</h3>
+                    <h3 class="text-info-emphasis text-center">{{$post->title}}</h3>
                 </div>
-                <a href="{{ route('posts.show', ['post' => $post->slug]) }}" class="btn btn-primary w-50 mb-3 ms-5  ">
+                <a href="{{ route('posts.show', ['post' => $post->slug]) }}" class="btn btn-info w-50 mb-3 ms-5  ">
                      Leggi Articolo
                  </a>
             </div>
